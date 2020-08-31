@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang= pt-br>
+<head>
+	<title>Formulário de cadastro</title>
+	<meta charset= "utf-8">
+</head>
+<body>
+
+	<p><strong> Cadastro de Pessoas</strong></p>
+    <form>
+    <label for="text1"> Nome:</label>
+		<input type= "text" name= "nome" size="30" id= "text1"placeholder="Digite seu nome aqui"/>
+        <br/><br/>
+    <label for = "text2">Sobrenome:</label>
+		<input type= "text" name="sobrenome" size= "30"id="text2"/>
+        <br/><br/>
+    <label for= "text3"> Endereço:</label>
+		<input type="text" name="Endereço" size="60" id= "text3"/>
+        <br><br/>
+    <label for= "email">Email</label>
+    	<input type= "email" id="e-mail" name="email" size="50">
+        <br/><br/>
+    <label for= "text5">Senha:</label>
+		<input type= "password" name="senha" maxlenght="10"
+        id="text4"required/>
+        <br/><br/>
+    
+    <hr>
+    Sexo:<br/><br/>
+    <input type= "radio" name="sexo" value="M"> Masculino<br>
+    <input type= "radio" name="sexo" value="F"> Feminino<br/><br/>
+    Estado civil:<br/> <br/>
+    <input type= "radio" name="estCivil" value="Solteiro" checked> Solteiro<br>
+    <input type= "radio" name="estCivil" value="Casado">casado<br>
+    <input type= "radio" name="estCivil" value="Viúvo"> Viúvo<br>
+    <input type= "radio" name="estCivil" value="separado">Separado<br/><br/>
+    
+    <fieldset>
+    <legend>Marque os idiomas de seu interesse</legend>
+     <input type="checkbox" name="Inglês" id="idi01" value= "Inglês">
+     <label for= "idi01">Inglês</label><br>
+     <input type="checkbox" name="Espanhol" id="idi02"value= "Espanhol">
+     <label for= "idi02">Espanhol</label><br>
+     <input type="checkbox" name="Francês" id="idi03" value= "Francês">
+     <label for= "idi03">Francês</label><br>
+     <input type="checkbox" name="Italiano" id="idi04" value="Italiano">
+     <label for= "idi04">Italiano</label><br>
+     <input type="checkbox" name="Portgues"id="idi05" value="Português">
+     <label for= "idi05">Português</label><br>
+  </fieldset> 
+  <fieldset>
+  <legend> Selcione as cores desejadas:</legend>
+  <select name ="Cores" id="cor">
+  <option value="Rosa">Rosa</option>
+  <option value="azul">Azul</option>
+  <option value="verde">Verde</option>
+  <option value="Roxo">Roxo</option>
+  <option value="amarelo">Amarelo</option>
+  <option value="cinza">Cinza</option>
+  </select><br>
+  </fieldset>
+  <fieldset>
+  <legend> Selcione as tecnologias de seu interesse:</legend>
+  <select name ="tecnologia" id="tecno" multiple>
+  <option value="javaScript">javaScript</option>
+  <option value="java">Java</option>
+  <option value="Python">Python</option>
+  <option value="PHP">PHP</option>
+  <option value="C++">C++</option>
+  <option value="C#">C#</option>
+  </select>
+  </fieldset><br>
+  
+  <input type= "submit" value= "Enviar"/>
+</form>
+</body>
+</html>
